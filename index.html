@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- 
+     1-internal
+     2-external
+     3-inline
+   -->
+</head>
+
+<body>
+
+  <div class="w-75 p-5 m-auto">
+    <label for="productName">Product Name <span class="text-danger">*</span></label>
+    <input type="text" autofocus class="form-control" id="productName">
+    <div id="nameAlert" class="alert alert-danger p-2 mt-2 d-none">name should be ay 7aga,,,,,,</div>
+    <label for="productPrice">Product Price <span class="text-danger">*</span></label>
+    <input type="number" autofocus  class="form-control" id="productPrice">
+    <label for="productCategory">Product Category <span class="text-danger">*</span></label>
+    <input type="text" autofocus class="form-control" id="productCategory">
+    <label for="productDesc">Product Description</label>
+    <textarea class="form-control" autofocus id="productDesc"></textarea>
+    <input type="number" id="count" placeholder="Count" autofocus class="form-control mt-3">
+    <button  id="addBtn" disabled class="btn btn-primary float-end mt-3">Add product</button>
+    <div class="clearfix"></div>
+    <input onkeyup="search(this.value)" type="text" class="form-control my-3" placeholder="search by name..">
+    <div id="delete"></div>
+    <table class="table table-dark table-hover table-striped">
+      <thead>
+        <th>ID</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Category</th>
+        <th>Product Description</th>
+        <th>UpDate</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
